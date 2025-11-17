@@ -1,0 +1,148 @@
+#include<iostream>
+#include <locale.h>
+using namespace std;
+int main ()
+{
+setlocale(LC_CTYPE,"spanish");
+int mes[13];
+int res;
+int mesnacimiento=1;
+cout<<endl;
+cout<<"    BIENVENIDO A EpIsNaToR!!!"<<endl;
+cout<<endl;
+cout<<"Hoy adivinaré que mes naciste con solo preguntas :)"<<endl;
+cout<<endl;
+cout<<"PRIMERA PREGUNTA"<<endl;
+cout<<endl;
+cout<<"¿Cual es tu clima favorito?:"<<endl;
+cout<<"1) calor"<<endl;
+cout<<"2) frio"<<endl;
+cout<<"3) templado"<<endl;
+cout<<"4) lluvia"<<endl;
+cout<<"Opción"<<endl;
+cin>>res;
+
+if(res==1){
+    mes[1]+1;mes[2]+1;mes[12]+1;}
+else if(res==2){
+    mes[6]+1;mes[7]+1;mes[8]+1;}
+else if(res==3){
+    mes[5]+1;mes[9]+1;mes[10]+1;}
+else if(res==4){
+    mes[3]+1;mes[4]+1;}
+
+
+cout<<endl;
+cout<<"SEGUNDA PREGUNTA"<<endl;
+cout<<endl;
+cout<<"¿Que festividad te gusta mas?:"<<endl;
+cout<<"1) Navidad y Año nuevo"<<endl;
+cout<<"2) Halloween y Dia de la cancion criolla"<<endl;
+cout<<"3) Inicio de año escolar"<<endl;
+cout<<"4) Fiestas patrias"<<endl;
+cout<<"5) Semana santa"<<endl;
+cout<<"Opción"<<endl;
+cin>>res;
+
+
+if(res==1){
+mes[12]+1;}
+if(res==2){
+    mes[10]+1;}
+if(res==3){
+    mes[3]+1;}
+if(res==4){
+    mes[7]+1;}
+if(res==5){
+    mes[3]+1;mes[4]+1;}
+
+cout<<endl;
+cout<<"TERCERA PREGUNTA"<<endl;
+cout<<endl;
+cout<<"¿Que color te representa?:"<<endl;
+cout<<"1) rojo"<<endl;
+cout<<"2) azul"<<endl;
+cout<<"3) amarillo"<<endl;
+cout<<"4) verde"<<endl;
+cout<<"5) morado"<<endl;
+cout<<"Opción"<<endl;
+cin>>res;
+
+if(res==1){
+mes[12]+1;}
+if(res==2){
+mes[6]+1;}
+if(res==3){
+mes[2]+1;}
+if(res==4){
+mes[3]+1;}
+if(res==5){
+mes[10]+1;}
+
+cout<<endl;
+cout<<"CUARTA PREGUNTA"<<endl;
+cout<<endl;
+cout<<"¿Cual te describe mas?:"<<endl;
+cout<<"1) energico"<<endl;
+cout<<"2) calmado"<<endl;
+cout<<"3) misterioso"<<endl;
+cout<<"4) alegre"<<endl;
+cout<<"Opción"<<endl;
+cin>>res;
+
+if(res==1){
+mes[1]+1;mes[3]+1;mes[8]+1;}
+if(res==2){
+mes[6]+1;mes[6]+1;mes[9]+1;}
+if(res==3){
+mes[10]+1;mes[11]+1;}
+if(res==4){
+mes[12]+1;mes[5]+1;mes[2]+1;}
+
+cout<<endl;
+cout<<"QUIENTA PREGUNTA"<<endl;
+cout<<endl;
+cout<<"¿En que etapa del año sientes mas motivación?:"<<endl;
+cout<<"1) inicio de año"<<endl;
+cout<<"2) transicion antes del frio"<<endl;
+cout<<"3) mitad de año"<<endl;
+cout<<"4) ultimo tramo del año"<<endl;
+cout<<"Opción"<<endl;
+cin>>res;
+
+if(res==1){
+mes[1]+1;mes[3]+1;mes[8]+1;}
+if(res==2){
+mes[6]+1;mes[6]+1;mes[9]+1;}
+if(res==3){
+mes[10]+1;mes[11]+1;}
+if(res==4){
+mes[12]+1;mes[5]+1;mes[2]+1;}
+
+
+for(int i=2;i<13;i++)
+{
+    if(mes[i]>mes[mesnacimiento])
+    {
+        mesnacimiento=i;
+    }
+}
+
+cout<<"Ya Lo Se!! NaCiSte En El MeS De "<<endl;
+
+cout<<endl;
+if(mesnacimiento==1) cout<<"enero!!";
+if(mesnacimiento==2) cout<<"eebrero!!";
+if(mesnacimiento==3) cout<<"marzo!!";
+if(mesnacimiento==4) cout<<"abril!!";
+if(mesnacimiento==5) cout<<"mayo!!";
+if(mesnacimiento==6) cout<<"Junio!!";
+if(mesnacimiento==7) cout<<"julio!!";
+if(mesnacimiento==8) cout<<"agosto!!";
+if(mesnacimiento==9) cout<<"septiembre!!";
+if(mesnacimiento==10) cout<<"octubre!!";
+if(mesnacimiento==11) cout<<"noviembre!!";
+if(mesnacimiento==12) cout<<"diciembre!!";
+
+ return 0;
+}
